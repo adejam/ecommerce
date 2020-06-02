@@ -1,0 +1,31 @@
+.link_div {
+  flex: 1 1 55%;
+}
+
+.profile_div {
+  display: block;
+  flex: 1 1 30%;
+}
+
+.profile_div ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.profile_div ul {
+  float: right;
+  color: white;
+}
+
+.profile_div ul li img {
+  width: 25px;
+  height: 25px;
+  color: #333;
+}
+
+.a_icon {
+  width: 27px;
+  height: 27px;
+  color: #333;
+  border-radius: 50%;
+}

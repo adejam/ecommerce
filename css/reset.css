@@ -1,5 +1,6 @@
 body {
-
+  font-family: arial, "Helvetica Neue";
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 a,
@@ -104,8 +105,6 @@ img {
   max-width: 100%;
 }
 
-
-
 .ta_center {
   text-align: center;
 }
@@ -142,12 +141,20 @@ img {
   display: flex;
 }
 
+.dir_r {
+  flex-direction: row;
+}
+
 .dir_c {
   flex-direction: column;
 }
 
 .flex_1 {
   flex: 1;
+}
+
+.fw {
+  flex-wrap: wrap;
 }
 
 .no_m {

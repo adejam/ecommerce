@@ -1,3 +1,7 @@
 .button_li {
   display: block;
 }
+
+.brand_text {
+  display: inline;
+}

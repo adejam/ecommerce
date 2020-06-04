@@ -29,3 +29,68 @@
   color: #333;
   border-radius: 50%;
 }
+
+.hot_ad {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+}
+
+.hot_ad_title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.arrow_div {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 50%;
+}
+
+.hot_ad_img_div {
+  min-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hot_ad_img_nav {
+  background-color: #383838;
+  right: 16px;
+  bottom: 1px;
+}
+
+.hot_ad_img_nav_a {
+  padding: 3px 5px;
+}
+
+.hot_ad_img_nav_a:hover {
+  background-color: #fbfbfb;
+}
+
+.hot_ad_img_d {
+  height: 220px;
+}
+
+.hot_ad_abt {
+  color: #d35266;
+  margin: 10px 0;
+}
+
+.hot_ad_p {
+  margin-bottom: 5px;
+}
+
+.hot_ad_btn_price,
+.hot_ad_btn_pd {
+  background-color: #d35266;
+}
+
+.hot_ad_btn_price {
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.hot_ad_btn_pd {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}

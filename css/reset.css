@@ -1,6 +1,7 @@
 body {
   font-family: Arial, "Helvetica Neue", sans-serif;
   background-color: #f9f9f9;
+  overflow-x: hidden;
 }
 
 a,

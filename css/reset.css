@@ -246,3 +246,7 @@ img {
 .br_0 {
   border-radius: 0;
 }
+
+.h_200 {
+  height: 200px;
+}

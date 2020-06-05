@@ -5,3 +5,33 @@
 .link_div {
   flex: 1 1 80%;
 }
+
+.categories {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.categories,
+.cat_header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.cat_bold {
+  font-size: 0.9em;
+}
+
+.cat_view_all {
+  color: #d35266;
+}
+
+.cat_view_all a:hover {
+  color: #383838;
+}
+
+.cat_item_text {
+  color: #d35266;
+}

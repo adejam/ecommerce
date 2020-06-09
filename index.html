@@ -14,69 +14,78 @@
   </head>
   <body>
     <div class="container-fluid no_p">
-      <nav class="navbar navbar-dark bg-dark justify-content-start">
-        <div class="brand_div">
-          <a class="navbar-brand brand" href="#">
-            <img
-              src="images/brand.ico"
-              width="30"
-              height="30"
-              class="d-inline-block align-top"
-              alt="b"
-            />
-            <span class="brand_text">BAS</span>
-          </a>
-        </div>
-        <div class="link_div">
-          <ul class="navbar-nav dir_r fw nav-fill">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item  ">
-              <a class="nav-link" href="#">Collection</a>
-            </li>
-            <li class="nav-item  ">
-              <a class="nav-link" href="#">Purchase list</a>
-            </li>
-            <li class="nav-item button_li d_none">
-              <button type="button" class="btn btn-danger">Post An Ad</button>
-            </li>
-          </ul>
-        </div>
-        <div class="profile_div d_none">
-          <ul>
-            <li>
-              <a href="#"><img src="images/mail.jpg" alt="video-icon"/></a>
-            </li>
-            <li>
-              <a href="#">Adejam <img src="images/photo.jpg" class="a_icon" alt="profile icon"/></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="title d_none">
-        <h2 class="title_header c_w ta_center">BAS</h2>
-        <p class="title_p ta_center">Buying And Selling Couldn't be Simpler than this!</p>
-        <form method="post" action="#" class="d-flex justify-content-center">
-          <div class="form-row mt justify-content-center">
-            <div class="input_div form-group col-md-2 col-sm-3 no_p">
-              <select id="inputState" class="form-control br_0">
-                <option selected>All Departments</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="input_div form-group col-md-3 col-sm-3 no_p">
-              <input type="text" class="form-control br_0" placeholder="state" />
-            </div>
-            <div class="input_div form-group col-md-4 col-sm-3 no_p">
-              <input type="text" class="form-control br_0" placeholder="What do you Search for?" />
-            </div>
-            <div class="form-group col-md-2 col-sm-2 button_div no_p">
-              <button type="button" class="br_0 btn-block btn btn-dark">Search</button>
-            </div>
+      <header>
+        <nav class="navbar navbar-dark bg-dark justify-content-start">
+          <div class="brand_div">
+            <a class="navbar-brand brand" href="#">
+              <img
+                src="images/brand.ico"
+                width="30"
+                height="30"
+                class="d-inline-block align-top"
+                alt="b"
+              />
+              <span class="brand_text">BAS</span>
+            </a>
           </div>
-        </form>
-      </section>
+          <div class="link_div">
+            <ul class="navbar-nav dir_r fw nav-fill">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link" href="#">Collection</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link" href="#">Purchase list</a>
+              </li>
+              <li class="nav-item button_li d_none">
+                <button type="button" class="btn btn-danger">Post An Ad</button>
+              </li>
+            </ul>
+          </div>
+          <div class="profile_div d_none">
+            <ul>
+              <li>
+                <a href="#"><img src="images/mail.jpg" alt="video-icon"/></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Adejam <img src="images/photo.jpg" class="a_icon" alt="profile icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="title d_none">
+          <h2 class="title_header c_w ta_center">BAS</h2>
+          <p class="title_p ta_center">Buying And Selling Couldn't be Simpler than this!</p>
+          <form method="get" action="search-results.html" class="d-flex justify-content-center">
+            <div class="form-row mt justify-content-center">
+              <div class="input_div form-group col-md-2 col-sm-3 no_p">
+                <select id="inputState" class="form-control br_0" name="department">
+                  <option selected>All Departments</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="input_div form-group col-md-3 col-sm-3 no_p">
+                <input type="text" class="form-control br_0" name="state" placeholder="state" />
+              </div>
+              <div class="input_div form-group col-md-4 col-sm-3 no_p">
+                <input
+                  type="text"
+                  class="form-control br_0"
+                  name="search"
+                  placeholder="What do you Search for?"
+                />
+              </div>
+              <div class="form-group col-md-2 col-sm-2 button_div no_p">
+                <button type="submit" class="br_0 btn-block btn btn-dark">Search</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </header>
       <main class="container-fluid main no_p">
         <div class="hot_ad d_none">
           <div class="row mw_960">

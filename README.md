@@ -2,7 +2,8 @@
 
 > The main objective of this project is to build a simple ecommerce webpage with a search results page.
 
-![screenshot](/app_screenshot.png)
+![Home page screenshot](/app_screenshot.png)
+![Search Results page screenshot](/app_screenshot2.png)
 
 The project uses Bootstrap framework and semantic HTML. CSS flexbox in conjunction with CSS float property is used for effective positioning of the elements.CSS Media Queries for responsive design.
 

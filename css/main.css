@@ -8,14 +8,21 @@
 
 .categories,
 .footer,
-.media_div {
+.media_div,
+.result_div {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .categories,
 .cat_header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding: 10px;
+}
+
+.categories,
+.cat_header,
+.radio_h6,
+.result_div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .category {
@@ -30,7 +37,8 @@
 .cat_item_text,
 .footer_header,
 .footer_form,
-.footer_cat_div a:hover {
+.footer_cat_div a:hover,
+.item_type {
   color: #d35266;
 }
 
@@ -75,4 +83,43 @@
 
 .media_path:hover {
   fill: #d35266;
+}
+
+.all {
+  margin-bottom: 10px;
+}
+
+.radio_h6,
+.result_head {
+  padding: 3px 0;
+}
+
+.item_img_nav {
+  background-color: #383838;
+  right: 16px;
+  bottom: 1px;
+}
+
+.item_img_nav_a {
+  padding: 3px 5px;
+}
+
+.item_img_nav_a:hover {
+  background-color: #fbfbfb;
+}
+
+.item_img_d {
+  max-height: 250px;
+}
+
+.item_img {
+  max-height: 248px;
+}
+
+.item_button {
+  background-color: #d35266;
+}
+
+.result_div:hover {
+  background-color: #fff;
 }

@@ -1,0 +1,20 @@
+.result_div {
+  margin-top: 10px;
+  padding: 0;
+  border-top: none;
+}
+
+.item_abt_div {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 10px;
+}
+
+.result_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_div {
+  display: none;
+}

@@ -1,10 +1,7 @@
 @import './reset.css';
 @import './main.css';
-@import 'small-screen.css' screen and (min-width: 481px);
+@import 'min_482.css' screen and (min-width: 482px);
 @import 'min_576.css' screen and (min-width: 576px);
-@import 'medium-screen.css' screen and (min-width: 768px);
+@import 'min_768.css' screen and (min-width: 768px);
 @import 'min_992.css' screen and (min-width: 992px);
-@import 'max_991.css' screen and (max-width: 991px);
 @import 'max_767.css' screen and (max-width: 767px);
-@import 'max_575.css' screen and (max-width: 575px);
-@import 'max_480.css' screen and (max-width: 480px);

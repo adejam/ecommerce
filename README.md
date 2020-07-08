@@ -27,7 +27,7 @@ This project demonstrates a simple design for an ecommerce website with search r
 
 ## Live Demo
 
-[Live Demo Link](https://adejam.github.io/ecommerce/.index.html)
+[Live Demo Link](https://adejam.github.io/ecommerce/index.html)
 
 ### Development (Running locally)
 

@@ -13,7 +13,874 @@
     <link type="text/css" rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-
+    <div class="container-fluid no_p">
+      <header>
+        <nav class="navbar navbar-dark bg-dark justify-content-start">
+          <div class="brand_div">
+            <a class="navbar-brand brand" href="index.html">
+              <img
+                src="images/brand.ico"
+                width="30"
+                height="30"
+                class="d-inline-block align-top"
+                alt="b"
+              />
+              <span class="brand_text d_none">BAS</span>
+            </a>
+          </div>
+          <div class="link_div">
+            <ul class="navbar-nav dir_r fw nav-fill">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link" href="test.html">Collection</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link" href="#">Purchase list</a>
+              </li>
+              <li class="nav-item button_li d_none">
+                <button type="button" class="btn btn-danger">Post An Ad</button>
+              </li>
+            </ul>
+          </div>
+          <div class="profile_div d_none">
+            <ul>
+              <li>
+                <a href="#"><img src="images/mail.jpg" alt="video-icon"/></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Adejam <img src="images/Photo.jpg" class="a_icon" alt="profile icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="title d_none">
+          <h1 class="title_header c_w ta_center">BAS</h1>
+          <p class="title_p ta_center">Buying And Selling Couldn't be Simpler than this!</p>
+          <form method="get" action="search-results.html" class="d-flex justify-content-center">
+            <div class="form-row mt justify-content-center">
+              <div class="input_div form-group col-md-2 col-sm-3 no_p">
+                <select id="inputState" class="form-control br_0" name="department">
+                  <option selected>All Departments</option>
+                  <option>Automotives</option>
+                  <option>Fashion</option>
+                  <option>Phones,Tabs and Laptops</option>
+                </select>
+              </div>
+              <div class="input_div form-group col-md-3 col-sm-3 no_p">
+                <input type="text" class="form-control br_0" name="state" placeholder="state" />
+              </div>
+              <div class="input_div form-group col-md-4 col-sm-3 no_p">
+                <input
+                  type="text"
+                  class="form-control br_0"
+                  name="search"
+                  placeholder="What do you Search for?"
+                />
+              </div>
+              <div class="form-group col-md-2 col-sm-2 button_div no_p">
+                <button type="submit" class="br_0 btn-block btn btn-dark">Search</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </header>
+      <main class="container-fluid main no_p">
+        <section class="hot_ad d_none">
+          <div class="row mw_960">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-11 ml-auto hot_ad_title"><h5>HOT ADS</h5></div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carous_w row">
+                      <div class="col-lg-5 col-md-5 hot_ad_img_div ">
+                        <div class="hot_ad_img_nav zi_1 pos_abs">
+                          <a href="#" class="hot_ad_img_nav_a d_ib">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w_full h_full"
+                              style="width: 12px; height: 12px;"
+                            >
+                              <path
+                                d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+                                style="fill: #d35266;"
+                              />
+                            </svg>
+                          </a>
+                          <a href="#" class="hot_ad_img_nav_a d_ib ">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w_full h_full"
+                              style="width: 12px; height: 12px;"
+                            >
+                              <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                style="fill: #d35266;"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="card hot_ad_img_d">
+                          <img
+                            class="card-img-top card_img"
+                            src="images/iphone11.jpg"
+                            alt="Card image cap"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-7 hot_ad_img_div">
+                        <h4 class="hot_ad_abt">IPhone 11.</h4>
+                        <p class="hot_ad_p">
+                          hbsdjs hdgfhu jhdifh jhdsi jsid jhdfi jhdi jhsied hufyi jhsudi jhsduih
+                          jshud ndhuh jhsuhd jhduh jhdfud shfty hft nudhot_ad_p xjn jhds jhdjs jshjd
+                          jdfh jhsid jhsh sjh.
+                        </p>
+                        <p><b>By:</b> Adeleye Jamiu</p>
+                        <p class="hot_ad_p">
+                          <b>Location:</b> 5, Buari Street, Ogudu Lagos State, Nigeria.
+                        </p>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn hot_ad_btn_price">$450</button>
+                          <button type="button" class="btn hot_ad_btn_pd">Purchase Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carous_w row">
+                      <div class="col-lg-5 col-md-5 hot_ad_img_div ">
+                        <div class="hot_ad_img_nav zi_1 pos_abs">
+                          <a href="#" class="hot_ad_img_nav_a d_ib">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w_full h_full"
+                              style="width: 12px; height: 12px;"
+                            >
+                              <path
+                                d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+                                style="fill: #d35266;"
+                              />
+                            </svg>
+                          </a>
+                          <a href="#" class="hot_ad_img_nav_a d_ib ">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w_full h_full"
+                              style="width: 12px; height: 12px;"
+                            >
+                              <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                style="fill: #d35266;"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="card hot_ad_img_d">
+                          <img
+                            class="card-img-top card_img"
+                            src="images/iphone11pro.jpg"
+                            alt="Card image cap"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-7 hot_ad_img_div">
+                        <h4 class="hot_ad_abt">IPhone 11 Pro (Black).</h4>
+                        <p class="hot_ad_p">
+                          hbsdjs hdgfhu jhdifh jhdsi jsid jhdfi jhdi jhsied hufyi jhsudi jhsduih
+                          jshud ndhuh jhsuhd jhduh jhdfud shfty hft nudhot_ad_p xjn jhds jhdjs jshjd
+                          jdfh jhsid jhsh sjh.
+                        </p>
+                        <p><b>By:</b> Adeleye Jamiu</p>
+                        <p class="hot_ad_p">
+                          <b>Location:</b> 5, Buari Street, Ogudu Lagos State, Nigeria.
+                        </p>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn hot_ad_btn_price">$450</button>
+                          <button type="button" class="btn hot_ad_btn_pd">Purchase Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carous_w row">
+                      <div class="col-lg-5 col-md-5 hot_ad_img_div ">
+                        <div class="hot_ad_img_nav zi_1 pos_abs">
+                          <a href="#" class="hot_ad_img_nav_a d_ib">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w_full h_full"
+                              style="width: 12px; height: 12px;"
+                            >
+                              <path
+                                d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+                                style="fill: #d35266;"
+                              />
+                            </svg>
+                          </a>
+                          <a href="#" class="hot_ad_img_nav_a d_ib ">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              class="w_full h_full"
+                              style="width: 12px; height: 12px;"
+                            >
+                              <path
+                                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                                style="fill: #d35266;"
+                              />
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="card hot_ad_img_d">
+                          <img
+                            class="card-img-top card_img"
+                            src="images/hp3.jpg"
+                            alt="Card image cap"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-md-7 hot_ad_img_div">
+                        <h4 class="hot_ad_abt">IPhone X.</h4>
+                        <p class="hot_ad_p">
+                          hbsdjs hdgfhu jhdifh jhdsi jsid jhdfi jhdi jhsied hufyi jhsudi jhsduih
+                          jshud ndhuh jhsuhd jhduh jhdfud shfty hft nudhot_ad_p xjn jhds jhdjs jshjd
+                          jdfh jhsid jhsh sjh.
+                        </p>
+                        <p><b>By:</b> Adeleye Jamiu</p>
+                        <p class="hot_ad_p">
+                          <b>Location:</b> 5, Buari Street, Ogudu Lagos State, Nigeria.
+                        </p>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn hot_ad_btn_price">$450</button>
+                          <button type="button" class="btn hot_ad_btn_pd">Purchase Details</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev car_a"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span class="car_span">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      style="width: 20px; height: 20px;"
+                    >
+                      <path
+                        d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"
+                        style="fill: #d35266;"
+                      />
+                    </svg>
+                  </span>
+                </a>
+                <a
+                  class="carousel-control-next car_a"
+                  href="#carouselExampleControls"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span class="car_span">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="w_full h_full"
+                      style="width: 20px; height: 20px;"
+                    >
+                      <path
+                        d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                        style="fill: #d35266;"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="categories">
+          <h2 class="d_none">Categories</h2>
+          <article class="category mw_960">
+            <div class="cat_header d-flex justify-content-between">
+              <div>
+                <img src="images/mobile-alt.svg" class="d_ib" width="15" height="25" alt="o" />
+                <h5 class="cat_bold d_ib">Phones,Tabs and Laptops.</h5>
+              </div>
+              <div class="cat_view_all">
+                <a href="#"> View All</a>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                  <div class="row mt-2 pl-2 pr-2">
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/hp.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">New</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/hp1.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">Used</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/hp2.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">Used</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/hp3.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">New</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="category mw_960">
+            <div class="cat_header d-flex justify-content-between">
+              <div>
+                <img src="images/shopping-bag.svg" class="d_ib" width="15" height="25" alt="o" />
+                <h5 class="cat_bold d_ib">Fashion.</h5>
+              </div>
+              <div class="cat_view_all">
+                <a href="#"> View All</a>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                  <div class="row mt-2 pl-2 pr-2">
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/8.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">New</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/9.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">Used</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/16.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">Used</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img class="card-img-top h_200" src="images/18.jpg" alt="Card image cap" />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">New</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="category mw_960">
+            <div class="cat_header d-flex justify-content-between">
+              <div>
+                <img src="images/car.svg" class="d_ib" width="15" height="25" alt="o" />
+                <h5 class="cat_bold d_ib">Automotives</h5>
+              </div>
+              <div class="cat_view_all">
+                <a href="#"> View All</a>
+              </div>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-12">
+                  <div class="row mt-2 pl-2 pr-2">
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img
+                          class="card-img-top h_200"
+                          src="images/hyundai.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">New</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img
+                          class="card-img-top h_200"
+                          src="images/hyundai1.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">Used</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img
+                          class="card-img-top h_200"
+                          src="images/toyota3.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">Used</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="col-md-3 col-sm-6 mt-2 p-1">
+                      <div class="card">
+                        <img
+                          class="card-img-top h_200"
+                          src="images/toyota1.jpg"
+                          alt="Card image cap"
+                        />
+                        <div class="card-body dropup">
+                          <h6 class="card-title cat_bold">
+                            HP Envy 15 1080p Laptop, Intel Core-i7
+                          </h6>
+                          <p class="card-text cat_item_text">New</p>
+                          <p class="card-text text-muted"><small>From: Lagos, Nigeria</small></p>
+                          <button
+                            type="button"
+                            class="btn btn-light"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <img src="images/plus.svg" width="12" alt="o" />
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Add to Collection</a>
+                            <a class="dropdown-item" href="#">Send a Message</a>
+                            <a class="dropdown-item" href="#">More Details</a>
+                          </div>
+                          <p class="btn cat_item_text f_r">$456</p>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer_div">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 footer_brand_div d_none p_10">
+              <h4 class="ta_center footer_brand">
+                <a class="" href="#">
+                  <img
+                    src="images/brand.ico"
+                    width="30"
+                    height="30"
+                    class="d-inline-block align-top"
+                    alt="b"
+                  />
+                  <span class="brand_text">BAS</span>
+                </a>
+              </h4>
+              <p>
+                djsnsh fdhjfhn fhuhg udhuf jriu iufi jhfiu iufu idfuu hf ifuu ruif gsudg jdhfuh
+                suhdisdjmdjf dfhnhf fdhi jhfdi jhfn djhfi jdfhnf kjso fjhu f f h gfu dkfjifu
+                juhfdufdh hfd dfgfg ghdgh h g gxdjhd gxj xdhj dhcxbxucx.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 footer_cat_div  p_10">
+              <h5 class="footer_header">CATEGORIES</h5>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-md-6">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="#">Real Estates</a>
+                    <a class="nav-link" href="#">Automotives</a>
+                    <a class="nav-link" href="#">Electronice</a>
+                    <a class="nav-link" href="#">Clothing</a>
+                    <a class="nav-link" href="#">Fashion</a>
+                    <a class="nav-link" href="#">Kids</a>
+                    <a class="nav-link" href="#">Food & Drink</a>
+                  </nav>
+                </div>
+                <div class="col-6 col-sm-6 col-md-6">
+                  <nav class="nav flex-column">
+                    <a class="nav-link " href="#">Real Estates</a>
+                    <a class="nav-link " href="#">Automotives</a>
+                    <a class="nav-link" href="#">Electronice</a>
+                    <a class="nav-link" href="#">Clothing</a>
+                    <a class="nav-link" href="#">Fashion</a>
+                    <a class="nav-link" href="#">Kids</a>
+                    <a class="nav-link" href="#">Food & Drink</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 footer_cat_div  p_10">
+              <h5 class="footer_header">NAVIGATIONS</h5>
+              <nav class="nav flex-column">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Sign In</a>
+                <a class="nav-link" href="#">Sign Up</a>
+                <a class="nav-link" href="#">Terms & Conditions</a>
+                <a class="nav-link" href="#">FAQs</a>
+                <a class="nav-link" href="#">Help</a>
+              </nav>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12  p_10">
+              <h5 class="footer_header fh"><span>hhhhhhhh</span></h5>
+              <form class="footer_form p_10">
+                <div class="form-group row">
+                  <label for="country" class="col-sm-5 col-5 col-form-label">COUNTRY</label>
+                  <div class="col-sm-7 col-7">
+                    <input type="text" class="form-control" id="country" placeholder="Country" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="language" class="col-sm-5 col-5 col-form-label">LANGUAGE</label>
+                  <div class="col-sm-7 col-7">
+                    <input type="text" class="form-control" id="language" placeholder="Language" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="currency" class="col-sm-5 col-5 col-form-label">CURRENCY</label>
+                  <div class="col-sm-7 col-7">
+                    <input type="text" class="form-control" id="currency" placeholder="Currency" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="d_flex p_10 media_div justify-content-between">
+            <div class="">
+              <small class="text-muted"
+                >© 2020 BAS.com. All Rights Reserved. Designed By Adeleye Jamiu.</small
+              >
+            </div>
+            <ul class="d_flex">
+              <li class="ml-0">
+                <a href="#" class="media_a d_block c_p ta_center">
+                  <svg
+                    class="w_full h_full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 264 512"
+                  >
+                    <path
+                      d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"
+                      class="media_path"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social_li">
+                <a href="#" class="media_a d_block c_p ta_center">
+                  <svg
+                    class="w_full h_full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                      class="media_path"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social_li">
+                <a href="#" class="media_a d_block c_p ta_center">
+                  <svg
+                    class="w_full h_full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                      class="media_path"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social_li">
+                <a href="#" class="media_a d_block c_p ta_center">
+                  <svg
+                    class="w_full h_full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm-70.7 372c-68.8 0-124-55.5-124-124s55.2-124 124-124c31.3 0 60.1 11 83 32.3l-33.6 32.6c-13.2-12.9-31.3-19.1-49.4-19.1-42.9 0-77.2 35.5-77.2 78.1s34.2 78.1 77.2 78.1c32.6 0 64.9-19.1 70.1-53.3h-70.1v-42.6h116.9c1.3 6.8 1.9 13.6 1.9 20.7 0 70.8-47.5 121.2-118.8 121.2zm230.2-106.2v35.5H372v-35.5h-35.5v-35.5H372v-35.5h35.5v35.5h35.2v35.5h-35.2z"
+                      class="media_path"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="social_li">
+                <a href="#" class="media_a d_block c_p ta_center">
+                  <svg
+                    class="w_full h_full"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                      class="media_path"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

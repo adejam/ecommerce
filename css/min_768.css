@@ -1,0 +1,138 @@
+.link_div {
+  flex: 1 1 55%;
+}
+
+.profile_div {
+  flex: 1 1 30%;
+}
+
+.profile_div,
+.hot_ad {
+  display: block;
+}
+
+.profile_div ul li {
+  display: inline;
+}
+
+.profile_div ul li,
+.hot_ad,
+.arrow_div {
+  padding: 10px;
+}
+
+.profile_div ul {
+  float: right;
+  color: white;
+}
+
+.profile_div ul li img {
+  width: 25px;
+  height: 25px;
+}
+
+.profile_div ul li img,
+.a_icon {
+  color: #333;
+}
+
+.a_icon {
+  width: 27px;
+  height: 27px;
+}
+
+.a_icon,
+.arrow_div {
+  border-radius: 50%;
+}
+
+.hot_ad {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hot_ad_title {
+  margin-top: 5px;
+}
+
+.hot_ad_title,
+.hot_ad_p {
+  margin-bottom: 5px;
+}
+
+.arrow_div {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.hot_ad_img_div {
+  min-height: 33px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hot_ad_img_nav {
+  background-color: #383838;
+  right: 16px;
+  bottom: 1px;
+}
+
+.hot_ad_img_nav_a {
+  padding: 3px 5px;
+}
+
+.hot_ad_img_nav_a:hover {
+  background-color: #fbfbfb;
+}
+
+.hot_ad_img_d {
+  max-height: 280px;
+}
+
+.hot_ad_abt {
+  color: #d35266;
+  margin: 10px 0;
+}
+
+.hot_ad_btn_price,
+.hot_ad_btn_pd {
+  background-color: #d35266;
+}
+
+.hot_ad_btn_price,
+.results_div {
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.hot_ad_btn_pd,
+.results_div {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.modal_button {
+  display: none;
+}
+
+.card_img {
+  height: 100%;
+  max-height: 278px;
+}
+
+.carous_w {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 300px;
+}
+
+.car_a {
+  width: 5%;
+}
+
+.car_span {
+  border-radius: 50%;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
